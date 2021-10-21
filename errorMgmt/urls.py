@@ -5,9 +5,8 @@ from . import views
 
 
 urlpatterns = [
-    path('fetch/', views.RUD_action),
-    path('del/', views.RUD_action),
-    path('modify/', views.RUD_action),
-    #path('createlog/', views.create_action),
+    path('fetch/', views.Actions.as_view()),
+    path('del/', views.Actions.as_view()),
+    path('modify/', views.Actions.as_view()),
     path('createlog/', views.Actions.as_view()),
 ]
